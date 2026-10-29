@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Aprendices SENA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="registro">
+        <h1>Registro SENA</h1>
+        <p class="descripcion">Ingresa tus datos como aprendiz del SENA.</p>
+
+        <form action="Registrar.php" method="post">
+            <div class="campo">
+                <label for="nombre">Nombre completo</label>
+                <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+            </div>
+
+            <div class="campo">
+                <label for="documento">Número de documento</label>
+                <input type="text" id="documento" name="documento" required>
+            </div>
+
+            <div class="campo">
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo" name="correo" autocomplete="email" required>
+            </div>
+
+            <div class="campo">
+                <label for="programa">Programa de formación</label>
+                <select id="programa" name="programa" required style="padding: 12px; background: #000; color: #fff; border: 1px solid #39a900; border-radius: 6px;">
+                    <option value="">Selecciona un programa</option>
+                    <option value="Análisis y Desarrollo de Software (ADSO)">Análisis y Desarrollo de Software (ADSO)</option>
+                    <option value="Gestión Integral de la Calidad">Gestión Integral de la Calidad</option>
+                    <option value="Contabilidad y Finanzas">Contabilidad y Finanzas</option>
+                    <option value="Gestión Administrativa">Gestión Administrativa</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="jornada">Jornada</label>
+                <select id="jornada" name="jornada" required style="padding: 12px; background: #000; color: #fff; border: 1px solid #39a900; border-radius: 6px;">
+                    <option value="">Selecciona una jornada</option>
+                    <option value="Mañana">Mañana</option>
+                    <option value="Tarde">Tarde</option>
+                    <option value="Noche">Noche</option>
+                    <option value="Fines de semana">Fines de semana</option>
+                </select>
+            </div>
+
+            <button type="submit">Registrar Aprendiz</button>
+        </form>
+    </main>
+</body>
+</html>
